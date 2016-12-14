@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ipsDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!-- 4.2开户 -->
+	<servlet>
+		<servlet-name>CreateNewIpsAcctServlet</servlet-name>
+		<servlet-class>ToolClass.CreateNewIpsAcctServlet</servlet-class>
+	</servlet>
+	<!-- 4.3登记标的 -->
+	<servlet>
+		<servlet-name>RegisterSubjectServlet</servlet-name>
+		<servlet-class>ToolClass.RegisterSubjectServlet</servlet-class>
+	</servlet>
+	<!-- 4.4登记债权人 -->
+	<servlet>
+		<servlet-name>RegisterCreditorServlet</servlet-name>
+		<servlet-class>ToolClass.RegisterCreditorServlet</servlet-class>
+	</servlet>
+	<!-- 4.5登记担保人 -->
+	<servlet>
+		<servlet-name>RegisterGuarantorServlet</servlet-name>
+		<servlet-class>ToolClass.RegisterGuarantorServlet</servlet-class>
+	</servlet>
+	<!-- 4.6登记债权转让 -->
+	<servlet>
+		<servlet-name>RegisterCretansferServlet</servlet-name>
+		<servlet-class>ToolClass.RegisterCretansferServlet</servlet-class>
+	</servlet>
+	<!-- 4.7自动投标签约 -->
+	<servlet>
+		<servlet-name>AutoNewSigningServlet</servlet-name>
+		<servlet-class>ToolClass.AutoNewSigningServlet</servlet-class>
+	</servlet>
+	<!-- 4.8自动还款签约 -->
+	<servlet>
+		<servlet-name>RepaymentSigningServlet</servlet-name>
+		<servlet-class>ToolClass.RepaymentSigningServlet</servlet-class>
+	</servlet>
+	<!-- 4.9充值 -->
+	<servlet>
+		<servlet-name>RechargeServlet</servlet-name>
+		<servlet-class>ToolClass.RechargeServlet</servlet-class>
+	</servlet>
+	<!-- 4.10转账 -->
+	<servlet>
+		<servlet-name>TransferServlet</servlet-name>
+		<servlet-class>ToolClass.TransferServlet</servlet-class>
+	</servlet>
+	<!-- 4.11还款 -->
+	<servlet>
+		<servlet-name>RepaymentNewTradeServlet</servlet-name>
+		<servlet-class>ToolClass.RepaymentNewTradeServlet</servlet-class>
+	</servlet>
+	<!-- 4.12解冻保证金 -->
+	<servlet>
+		<servlet-name>GuaranteeUnfreezeServlet</servlet-name>
+		<servlet-class>ToolClass.GuaranteeUnfreezeServlet</servlet-class>
+	</servlet>
+	<!-- 4.13自动代扣充值 -->
+	<servlet>
+		<servlet-name>CoDpTradeServlet</servlet-name>
+		<servlet-class>ToolClass.CoDpTradeServlet</servlet-class>
+	</servlet>
+	<!-- 4.14提现 -->
+	<servlet>
+		<servlet-name>DoSTTradeServlet</servlet-name>
+		<servlet-class>ToolClass.DoSTTradeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>ToolClass.TestServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>WsTestServlet</servlet-name>
+		<servlet-class>ToolClass.WsTestServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>CreateNewIpsAcctServlet</servlet-name>
+		<url-pattern>/CreateNewIpsAcct</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterSubjectServlet</servlet-name>
+		<url-pattern>/RegisterSubject</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterCreditorServlet</servlet-name>
+		<url-pattern>/RegisterCreditor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterGuarantorServlet</servlet-name>
+		<url-pattern>/RegisterGuarantor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterCretansferServlet</servlet-name>
+		<url-pattern>/RegisterCretansfer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AutoNewSigningServlet</servlet-name>
+		<url-pattern>/AutoNewSigning</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RepaymentSigningServlet</servlet-name>
+		<url-pattern>/RepaymentSigning</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RechargeServlet</servlet-name>
+		<url-pattern>/Recharge</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TransferServlet</servlet-name>
+		<url-pattern>/Transfer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RepaymentNewTradeServlet</servlet-name>
+		<url-pattern>/RepaymentNewTrade</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GuaranteeUnfreezeServlet</servlet-name>
+		<url-pattern>/GuaranteeUnfreeze</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>CoDpTradeServlet</servlet-name>
+		<url-pattern>/CoDpTrade</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DoSTTradeServlet</servlet-name>
+		<url-pattern>/DoSTTrade</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WsTestServlet</servlet-name>
+		<url-pattern>/wstest</url-pattern>
+	</servlet-mapping>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
